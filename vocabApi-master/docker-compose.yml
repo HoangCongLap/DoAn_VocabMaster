@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  nesttypescriptstarter:
+    image: hcnhatnam/kimochi_api
+    volumes:
+      - /home/namhcn/Documents/aws/Kimochi/resources/uploads:/usr/src/app/uploads
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    network_mode: 'host'
+    environment:
+      NODE_ENV: development
+    restart: always
