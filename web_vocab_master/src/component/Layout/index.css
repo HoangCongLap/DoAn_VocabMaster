@@ -1,0 +1,44 @@
+.inbox-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.082);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #298b4a;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-right: 20px;
+
+}
+
+.inbox-btn svg path {
+    fill: white;
+}
+
+.inbox-btn svg {
+    height: 17px;
+    transition: all 0.3s;
+}
+
+.msg-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 0.7em;
+    color: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbox-btn:hover {
+    transform: scale(1.1);
+}
